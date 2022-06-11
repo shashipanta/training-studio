@@ -1,0 +1,283 @@
+:root {
+  --clr-bg-primary: #ea593a;
+  --clr-bg-primary-light: #ec7f66;
+  --clr-contrast: #fff;
+  --clr-dark-black: #2f3032;
+  --clr-light-grey: rgb(143, 141, 141);
+  --clr-dark-blue: #547098;
+  --box-shadow: 0px 4px 26px -11px rgba(66, 59, 59, 0.59);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+/* body {
+  background-image: url("./../img/landing-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+.primary-btn {
+  background-color: var(--clr-bg-primary);
+  color: var(--clr-contrast);
+  text-transform: uppercase;
+  padding: 0.5em 0.8em !important;
+  font-weight: bold;
+}
+
+.primary-btn:hover {
+  background-color: var(--clr-bg-primary-light) !important;
+  border: solid 1px var(--clr-contrast);
+  color: var(--clr-constrast) !important;
+}
+.primary-text {
+  color: var(--clr-bg-primary) !important;
+}
+
+.sign-up {
+  margin-top: 0.5em;
+}
+
+.hero-img-container {
+  min-height: 30em;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(88, 84, 87, 0.8)
+    ),
+    url("./../img/gym.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: wheat;
+  margin-top: -1em;
+}
+
+.hero-img-container h1 {
+  font-size: 3em;
+  font-weight: bolder;
+}
+/* Custom Card for features section */
+.card-body {
+  display: flex;
+  gap: 1em;
+  padding: 2em;
+}
+
+.card-right-btn {
+  display: grid !important;
+  place-items: center;
+}
+
+.card-right-btn span {
+  font-size: 4em !important;
+}
+
+.card-left-content {
+  gap: 0.1em;
+}
+
+.card-title {
+  color: var(--clr-dark-black);
+  font-weight: bold;
+}
+
+.card-text {
+  color: var(--clr-light-grey);
+  text-align: justify;
+}
+
+.card-text-blue {
+  color: var(--clr-dark-blue);
+  font-weight: bold;
+}
+
+.msg-section {
+  text-transform: uppercase;
+  margin: 4em 0;
+  text-align: center !important;
+  position: relative;
+}
+
+.top-msg {
+  font-weight: bold;
+}
+
+.next-msg {
+  color: var(--clr-light-grey);
+  text-transform: none;
+  margin: 1em auto;
+  text-align: center;
+  width: 60%;
+  min-width: 10em;
+}
+
+.curve-decoration {
+  margin: 0.3em auto;
+  width: 200px;
+  border: 1px dashed var(--clr-bg-primary);
+  /* border-radius: 0 0 240px 50%/60px; */
+}
+
+.member-img-container {
+  min-height: 16em;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(88, 84, 87, 0.8)
+    ),
+    url("./../img/landing-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  color: wheat;
+  margin-top: 3em;
+}
+
+.mem-btn {
+  margin-top: 3em;
+}
+
+.msg-container {
+  padding: 1em !important;
+  gap: 2em !important;
+}
+.member-card {
+  box-shadow: var(--box-shadow);
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1em;
+}
+
+.member-card:hover.member-card {
+  color: var(--clr-bg-primary);
+  /* background-color: var(--clr-bg-primary); */
+}
+
+.mem-img-container {
+  background-image: url("./../img/mem-right.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 18em;
+  border-radius: 5px;
+}
+
+/* message portion of training section */
+.mem-train-msg {
+  color: var(--clr-light-grey);
+}
+
+.view-btn {
+  text-transform: none;
+  width: 100%;
+  padding: 1.5em !important;
+}
+
+/* class schedule container  */
+.class-schedule-container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(88, 84, 87, 0.8)
+    ),
+    url("./../img/three-girls.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45em;
+  margin: 5em 0 !important;
+  padding: 3em 8em;
+}
+
+.class-schedule-msg,
+.class-schedule-msg * {
+  color: wheat;
+}
+
+.date-section {
+  color: wheat;
+  text-align: center;
+  margin-bottom: 3em !important;
+}
+
+.active-date {
+  color: var(--clr-bg-primary);
+}
+
+table {
+  color: var(--clr-contrast);
+}
+
+/* EXPERT TRAINER'S SECTION */
+.expert-trainers-container {
+  margin: 6em 0;
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  width: 100%;
+}
+
+.expert-card-container {
+  border: 1px solid rgba(124, 121, 123, 0.8);
+  border-radius: 8px;
+  padding: 2em;
+}
+
+.expert-card {
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  text-align: left;
+  text-transform: none;
+}
+
+.expert-img {
+  /* width: 18em; */
+  height: 14em;
+  border-radius: 4px;
+  /* aspect-ratio: 1/1; */
+}
+
+.trainer-type {
+  text-align: left !important;
+  padding: 1em 0 !important;
+  color: var(--clr-bg-primary);
+}
+
+.social-media-container {
+  margin: 1em 0.2em;
+  display: flex;
+  gap: 2em;
+}
+
+.social-media-container i {
+  cursor: pointer;
+}
+
+.social-media-container i:hover {
+  color: var(--clr-bg-primary);
+}
+
+/* footer section */
+.footer {
+  min-height: 4em;
+  padding: 3em 5em;
+  background-color: var(--clr-bg-primary);
+}
+
+.footer > a {
+  color: var(--clr-contrast);
+}
